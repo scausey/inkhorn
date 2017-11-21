@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+body {
+  background-color: #F2F5F7;
+  font-size: 16px;
+  height: 100%;
+}
+
+p {
+  margin: auto;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* header rules */
+header {
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%;
+  font-family: 'Spectral SC', serif;
+}
+
+header i, header h1 {
+  display: inline-block;
+  width: 33%;
+}
+
+.fa-search, .fa-bars {
+  color: grey;
+}
+
+header .fa-search {
+  text-align: left;
+}
+
+header .fa-bars {
+  text-align: right;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+/* main */
+.content {
+  margin-top: 30px;
+  border: 1px solid blue;
+}
+
+
+/* recent-review and open-review */
+.open-review {
+  margin-bottom: 20px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  border: 1px solid red;
+}
+
+.book-cover {
+  max-width: 30%;
+  display: inline-block;
+  margin-right: 20px;
+  float: left;
+  box-shadow: 10px 10px 15px #b0b0b0;
+  /*border: 1px solid blue;*/
+}
+
+.review-content {
+  height: 100%;
+  display: inline-block;
+  max-width: 100%;
+  padding: 10px 10px;
+  /*border: 1px solid blue;*/
+}
+
+.review-content .review-text {
+  background-color: #f3f6f7;
+  padding-right: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: white;
+  min-height: 500px;
+  border: 1px solid green;
+  font-size: 1.1rem;
+}
+
+.review-content p {
+  padding: 10px 15px;
+  /*border: 1px solid purple;*/
+}
+
+.review-content .btn {
+  display: inline-block;
+  border: 1px solid black;
+  color: #000000;
+  /*text-align: right;*/
+  background-color: #FFFFFF;
+}
+
+.review-content .btn:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  color: #FFFFFF;
+  background-color: #000000;
+}
