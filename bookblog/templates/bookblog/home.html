@@ -1,0 +1,38 @@
+{% extends 'bookblog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="open-review recent-review">
+  <div class="review-content">
+    <img src="{% static 'images/bookcovers/thelanguageofthorns.jpg' %}"/>
+    <div class="review-text">
+      <p class="date-read">11/15/2017 - 11/20/2017</p>
+      <p class="fav-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nisi vel est finibus fermentum. Etiam sodales malesuada commodo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam non faucibus dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi condimentum tortor turpis, sit amet interdum nibh condimentum quis. Nunc tempus ligula in ultrices sodales. Integer molestie purus eu leo sollicitudin, vehicula pretium mauris lobortis. Sed est orci, pulvinar vitae diam vel, condimentum porta tellus. Pellentesque et blandit ante, id tempus quam. Sed auctor urna vitae sem varius vestibulum.
+      </p>
+      <p>
+        Suspendisse potenti. Vestibulum imperdiet consectetur elit. Cras felis nisi, blandit sit amet placerat nec, semper vel neque. Vivamus sit amet massa vitae diam pretium rhoncus. Aenean vestibulum, orci nec scelerisque pellentesque, lorem ex fermentum nisi, at egestas nisi mauris eget orci. Proin ultrices sodales mi, vel scelerisque nulla volutpat non. Nunc accumsan mi in pharetra fermentum. Mauris efficitur efficitur leo sit amet iaculis. Cras a ante interdum, vehicula sem viverra, malesuada libero. Etiam mattis sagittis euismod. Donec pellentesque ligula nec enim aliquet, sit amet commodo turpis tristique. Suspendisse at malesuada velit. Mauris aliquam urna quis lacus consectetur, ac tincidunt leo semper. Cras nec mi molestie diam lacinia sagittis eu a libero.
+      </p>
+      <p>
+        Cras ac neque at massa consequat aliquam maximus vel erat. Morbi pellentesque diam a tempor dictum. Proin ut rutrum tortor. Quisque euismod velit eget turpis pretium, quis rutrum tortor aliquet. Ut orci lectus, pharetra vitae vestibulum quis, posuere quis purus. Donec ornare ut ex a dapibus. Phasellus a odio nec eros viverra elementum quis sed purus. Donec at est luctus, porttitor quam vel, mattis erat. Aenean diam felis, pellentesque eu lobortis in, aliquet et tellus. Donec rutrum rutrum hendrerit. Nam euismod orci sed tincidunt auctor. Cras eu urna ac lacus commodo commodo eget vitae massa. Duis rhoncus turpis nec magna semper, vel lacinia nunc malesuada. Vivamus finibus sem eget rhoncus pulvinar. Nunc congue in ante id efficitur.
+      </p>
+      <div>
+        <p class="btn"><strong>Read More</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <img src="{% static 'images/bookcovers/thegendergame.jpg' %}" />
+  <img src="{% static 'images/bookcovers/summerdaysandsummernights.jpg' %}" />
+  <img src="{% static 'images/bookcovers/empireofstorms.jpg' %}" />
+  <img src="{% static 'images/bookcovers/windwitch.jpg' %}" />
+</div>
+<div class="row">
+  <img src="{% static 'images/bookcovers/steelheart.jpg' %}" />
+  <img src="{% static 'images/bookcovers/truthwitch.jpg' %}" />
+  <img src="{% static 'images/bookcovers/ravenboys.jpg' %}" />
+  <img src="{% static 'images/bookcovers/acourtofthornsandroses.jpg' %}" />
+</div>
+{% endblock %}

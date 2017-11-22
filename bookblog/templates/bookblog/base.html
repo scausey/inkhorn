@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>inkHorn</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <script src="https://use.fontawesome.com/3c9eeacadf.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        <a href="index.html"><h1><strong>ink</strong>Horn</h1></a>
+        <a href="about.html"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </header>
+    <div class="content">
+      <div class="container">
+
+        {% block content %}
+        {% endblock %}
+
+      </div>
+    </div>
+  </body>
+</html>
