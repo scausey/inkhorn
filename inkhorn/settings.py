@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media", "media_root")
+# MEDIA_ROOT = '/home/dan/mysite/media/'
+# MEDIA_URL = '/media/'
 
 # Application definition
 

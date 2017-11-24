@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
 
 def home(request):
-    return render(request, 'bookblog/home.html', {})
+    books = Post.objects.filter(date_published__lte=timezone.now()).order_by('date_published')
+    recent_review = books.first()
+    return render(request, 'bookblog/home.html', {'books': books, 'recent_review': recent_review})

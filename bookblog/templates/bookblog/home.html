@@ -2,9 +2,16 @@
 {% load staticfiles %}
 
 {% block content %}
-<div class="open-review recent-review">
+<div class="recent-review">
   <div class="review-content">
-    <img src="{% static 'images/bookcovers/thelanguageofthorns.jpg' %}"/>
+    <h1>{{ recent_review.title }}</h1>
+    <h4>{{ recent_review.date_published }}</h4>
+    <img src="{{ recent_review.book_cover.url }}" />
+    <p>{{ recent_review.text }}</p>
+
+
+
+    <!-- <img src="{% static 'images/bookcovers/thelanguageofthorns.jpg' %}"/>
     <div class="review-text">
       <p class="date-read">11/15/2017 - 11/20/2017</p>
       <p class="fav-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
@@ -22,17 +29,5 @@
       </div>
     </div>
   </div>
-</div>
-<div class="row">
-  <img src="{% static 'images/bookcovers/thegendergame.jpg' %}" />
-  <img src="{% static 'images/bookcovers/summerdaysandsummernights.jpg' %}" />
-  <img src="{% static 'images/bookcovers/empireofstorms.jpg' %}" />
-  <img src="{% static 'images/bookcovers/windwitch.jpg' %}" />
-</div>
-<div class="row">
-  <img src="{% static 'images/bookcovers/steelheart.jpg' %}" />
-  <img src="{% static 'images/bookcovers/truthwitch.jpg' %}" />
-  <img src="{% static 'images/bookcovers/ravenboys.jpg' %}" />
-  <img src="{% static 'images/bookcovers/acourtofthornsandroses.jpg' %}" />
-</div>
+</div> -->
 {% endblock %}
