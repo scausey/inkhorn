@@ -1,0 +1,17 @@
+{% extends 'bookblog/base.html' %}
+{% load staticfiles %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/review_detail.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="book-review-container">
+  <img class="book-cover" src="{{ book_review.book_cover.url }}" />
+  <h1>{{ book_review.title }}</h1>
+  <h4>{{ book_review.date_published }}</h4>
+  <p>{{ book_review.book_review|linebreaksbr }}</p>
+  <br class="clear"/>
+</div>
+
+{% endblock %}

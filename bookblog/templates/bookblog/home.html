@@ -8,16 +8,17 @@
 {% block content %}
 <div class="recent-review">
   <img class="book-cover" src="{{ recent_review.book_cover.url }}" />
-  <h1>{{ recent_review.title }}</h1>
+  <a href="{% url 'review_detail' pk=recent_review.pk %}"><h1>{{ recent_review.title }}</h1></a>
   <h4>{{ recent_review.date_published }}</h4>
-  <p>{{recent_review.book_review|linebreaksbr|truncatewords:220}}</p>
-  <a href="#" class="btn"><strong>Read More</strong></a>
+  <p>{{recent_review.book_review|linebreaksbr|truncatewords:200}}</p>
+  <a href="{% url 'review_detail' pk=recent_review.pk %}" class="btn"><strong>Read More</strong></a>
 </div>
 
-<div class="past-books">
-  <div class="row">
+<div class="past-books-container">
+  <h1>Past Book Reviews</h1>
+  <div class="past-books">
     {% for book in past_books %}
-    <img src="{{ book.book_cover.url }}" />
+    <a href="{% url 'review_detail' pk=book.pk %}"><img src="{{ book.book_cover.url }}" /></a>
     {% endfor %}
   </div>
 </div>
