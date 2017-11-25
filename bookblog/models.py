@@ -4,7 +4,9 @@ from django.utils import timezone
 class Post(models.Model):
     title = models.CharField(max_length=200)
     date_published = models.DateTimeField(blank=True, null=True)
-    text = models.TextField()
+    book_synopsis = models.TextField(null=True, blank=True)
+    book_review = models.TextField()
+    # maybe change upload_to to 'images/bookcovers'
     book_cover = models.ImageField(null=True, blank=True, upload_to="images")
 
     def publish(self):
