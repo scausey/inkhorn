@@ -11,3 +11,6 @@ def home(request):
 def review_detail(request, pk):
     book_review = get_object_or_404(Post, pk=pk)
     return render(request, 'bookblog/review_detail.html', {'book_review': book_review})
+
+def about(request):
+    return render(request, 'bookblog/about.html', {})

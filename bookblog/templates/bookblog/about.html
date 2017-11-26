@@ -1,0 +1,38 @@
+{% extends 'bookblog/base.html' %}
+{% load staticfiles %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="about">
+  <h1>About</h1>
+  <div class="about-images">
+    <span class="about-image-2">
+      <img src="{% static 'images/holes.jpeg' %}" />
+    </span>
+    <span class="about-image-1">
+      <img src="{% static 'images/me.jpeg' %}" />
+    </span>
+    <span class="about-image-3">
+      <img src="{% static 'images/bookcon.jpg' %}" />
+    </span>
+  </div>
+  <div class="about-content">
+    <p>Hello! I'm Sam and I read past my bedtime. I live on a diet that mostly consists of young adult science fiction and fantasy. Like a lot of readers, I'm working on a handful of stories I want to throw out into the world in hopes that someone will like it.<p>
+    <p>Margaret Atwood signed my copy of <a href="https://www.goodreads.com/book/show/38447.The_Handmaid_s_Tale"><em>A Handmaid's Tale</em></a> (picture above) at <a href="http://www.thebookcon.com/">BookCon</a> 2017 and I just about died right then and there. I was obsessed with Sarah J. Maas for a moment, but the craze has died down. My favorite recent YA series is <a href="https://www.goodreads.com/series/62018-the-lunar-chronicles"><em>The Lunar Chronicles</em></a> by Marissa Meyer. My favorite old-school fantasy book is <em><a href="https://www.goodreads.com/book/show/518848.Sabriel?ac=1&from_search=true">Sabriel</a></em>, by Garth Nix (and also the other two books in the series because I love the Disputable Dog). As you can tell, sometimes my best friend and I dress up as literary characters (<a href="https://www.youtube.com/watch?v=JLwyn8uQhkw">"Can ya hear the empty spaces?!"</a>).</p>
+    <p>When I'm not reading, I'm teaching others how to code, or trying to build things like this website. Python is love. For real. If you like code too, check out my <a href="https://github.com/scausey">github</a>! You can find me other places online too: </p>
+    <div class="social-media-icons">
+      <!-- <a href="https://www.goodreads.com/user/show/3955921-samantha-louise" class="goodreads"><span class="icon-stack">
+        <i class="icon-sign-blank icon-stack-base"></i>
+        <i class="icon-light"><span style="font-family:helvetica;">g</span></i>
+      </span></a> -->
+      <a href="http://steamcommunity.com/id/enigmajane/"><i class="fa fa-steam-square fa-3x" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/causeys007"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+      <a href="https://www.pinterest.com/lovelittlelou3/"><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></a>
+      <a href="https://github.com/scausey"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</div>
+{% endblock %}
