@@ -1,12 +1,13 @@
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
-from .models import Post
+from .models import Post, Sticker
 
 def home(request):
     books = Post.objects.filter(date_published__lte=timezone.now()).order_by('-date_published')
     recent_review = books.first()
     past_books = books[1:]
-    return render(request, 'bookblog/home.html', {'past_books': past_books, 'recent_review': recent_review})
+    stickers = Sticker.objects.all()
+    return render(request, 'bookblog/home.html', {'past_books': past_books, 'recent_review': recent_review, 'stickers': stickers})
 
 def review_detail(request, pk):
     book_review = get_object_or_404(Post, pk=pk)

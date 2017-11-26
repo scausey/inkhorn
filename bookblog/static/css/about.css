@@ -36,20 +36,7 @@
   width: 175px;
   height: 175px;
   border-radius: 50%;
-  /*visibility: hidden;*/
 }
-
-/*.about-image-1 {
-  background-color: #D75B46;
-}
-
-.about-image-2 {
-  background-color: #15A3A7;
-}
-
-.about-image-3 {
-   background-color: #21C4C8;
-}*/
 
 .about-image-1:hover img, .about-image-2:hover img, .about-image-3:hover img {
   visibility: visible;

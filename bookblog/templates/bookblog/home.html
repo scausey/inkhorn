@@ -3,6 +3,7 @@
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
 {% endblock %}
 
 {% block content %}
@@ -14,12 +15,66 @@
   <a href="{% url 'review_detail' pk=recent_review.pk %}" class="btn"><strong>Read More</strong></a>
 </div>
 
+<div class="currently-reading">
+  <div class="current-book-content">
+    <h1>Currently Reading: Scythe (Arc of a Scythe #1), by Neil Shusterman</h1>
+    <h4>Started November 21, 2017</h4>
+    <div class="blurb">
+      <p>Thou shalt kill.</p>
+      <br />
+      <p>A world with no hunger, no disease, no war, no misery. Humanity has conquered all those things, and has even conquered death. Now scythes are the only ones who can end life—and they are commanded to do so, in order to keep the size of the population under control.</p>
+      <br />
+      <p>Citra and Rowan are chosen to apprentice to a scythe—a role that neither wants. These teens must master the “art” of taking life, knowing that the consequence of failure could mean losing their own.</p>
+    </div>
+  </div>
+  <img class="book-cover" src="https://images.gr-assets.com/books/1456173247l/29246020.jpg" />
+</div>
+
 <div class="past-books-container">
   <h1>Past Book Reviews</h1>
   <div class="past-books">
     {% for book in past_books %}
     <a href="{% url 'review_detail' pk=book.pk %}"><img src="{{ book.book_cover.url }}" /></a>
     {% endfor %}
+  </div>
+</div>
+
+<!-- <div class="stickers">
+  <h1>Stickers! ::)</h1>
+  <div class="stickers-list">
+    {% for sticker in stickers %}
+    <img src="{{ sticker.sticker_image.url }}" />
+    {% endfor %}
+  </div>
+</div> -->
+
+<div class="about">
+  <h1>About</h1>
+  <div class="about-images">
+    <span class="about-image-2">
+      <img src="{% static 'images/holes.jpeg' %}" />
+    </span>
+    <span class="about-image-1">
+      <img src="{% static 'images/me.jpeg' %}" />
+    </span>
+    <span class="about-image-3">
+      <img src="{% static 'images/bookcon.jpg' %}" />
+    </span>
+  </div>
+  <div class="about-content">
+    <p>Hello! I'm Sam and I read past my bedtime. I live on a diet that mostly consists of young adult science fiction and fantasy. Like a lot of readers, I'm working on a handful of stories I want to throw out into the world in hopes that someone will like it.<p>
+    <p>Margaret Atwood signed my copy of <a href="https://www.goodreads.com/book/show/38447.The_Handmaid_s_Tale"><em>A Handmaid's Tale</em></a> (picture above) at <a href="http://www.thebookcon.com/">BookCon</a> 2017 and I just about died right then and there. I was obsessed with Sarah J. Maas for a moment, but the craze has died down. My favorite recent YA series is <a href="https://www.goodreads.com/series/62018-the-lunar-chronicles"><em>The Lunar Chronicles</em></a> by Marissa Meyer. My favorite old-school fantasy book is <em><a href="https://www.goodreads.com/book/show/518848.Sabriel?ac=1&from_search=true">Sabriel</a></em>, by Garth Nix (and also the other two books in the series because I love the Disputable Dog). As you can tell, sometimes my best friend and I dress up as literary characters (<a href="https://www.youtube.com/watch?v=JLwyn8uQhkw">"Can ya hear the empty spaces?!"</a>).</p>
+    <p>When I'm not reading, I'm teaching others how to code, or trying to build things like this website. Python is love. For real. If you like code too, check out my <a href="https://github.com/scausey">github</a>! You can find me other places online too: </p>
+    <div class="social-media-icons">
+      <!-- <a href="https://www.goodreads.com/user/show/3955921-samantha-louise" class="goodreads"><span class="icon-stack">
+        <i class="icon-sign-blank icon-stack-base"></i>
+        <i class="icon-light"><span style="font-family:helvetica;">g</span></i>
+      </span></a> -->
+      <a href="http://steamcommunity.com/id/enigmajane/"><i class="fa fa-steam-square fa-3x" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/causeys007"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+      <a href="https://www.pinterest.com/lovelittlelou3/"><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></a>
+      <a href="https://github.com/scausey"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+    </div>
   </div>
 </div>
 {% endblock %}
