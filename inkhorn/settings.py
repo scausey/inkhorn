@@ -28,10 +28,8 @@ DEBUG = False
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media", "media_root")
-# MEDIA_ROOT = '/home/dan/mysite/media/'
 # MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media", "media_root")
 
 # Application definition
 
