@@ -7,7 +7,7 @@ class Post(models.Model):
     book_synopsis = models.TextField(null=True, blank=True)
     book_review = models.TextField()
     # maybe change upload_to to 'images/bookcovers'
-    book_cover = models.ImageField(null=True, blank=True, upload_to="images")
+    book_cover = models.ImageField(null=True, blank=True)
 
     def publish(self):
         self.date_published = timezone.now()
@@ -15,7 +15,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
- 
+
 
 class Sticker(models.Model):
     sticker_title = models.CharField(max_length=200)
