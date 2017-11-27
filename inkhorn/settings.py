@@ -134,6 +134,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # STATIC_ROOT = "inkhorn.herokuapp.com/static"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
+
+MEDIA_URL = os.path.join(BASE_DIR, 'media/')
 
 # Extra places for collectstatic to find static files. Maybe delete.
 # STATICFILES_DIRS = (
