@@ -139,9 +139,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 MEDIA_URL = os.path.join(BASE_DIR, 'media/')
 
 # Extra places for collectstatic to find static files. Maybe delete.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(PROJECT_ROOT, 'static'),
+# )
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
