@@ -1,0 +1,113 @@
+/* RECENT-REVIEW */
+.recent-review, .book-review-container {
+  background-color: #FFFFFF;
+  margin: 10px 0px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  /*height: 500px;*/
+  padding: 30px 50px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+
+.recent-review {
+  height: 500px;
+}
+
+.book-cover {
+  display: flex;
+  max-width: 25%;
+  margin: 10px 10px;
+  margin-right: 40px;
+  float: left;
+  box-shadow: 0px 0px 25px #232323;
+  margin-bottom: 25px;
+}
+
+.recent-review h4, .book-review-container h4 , .current-book-content h4{
+  margin-bottom: 20px;
+}
+
+.recent-review .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px 70px;
+  border: 1px solid black;
+}
+
+.recent-review .btn:hover {
+  cursor: pointer;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+
+/* CURRENTLY READING */
+.currently-reading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  margin: 10px 0px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  /*height: 500px;*/
+  padding: 30px 50px;
+  padding-right: 50px;
+}
+
+.currently-reading .book-cover {
+  display: flex;
+  max-height: 300px;
+  margin: 10px 10px;
+  margin-right: 40px;
+  box-shadow: 0px 0px 25px #232323;
+}
+
+.blurb {
+  border-left: 4px solid #D75B46;
+  margin-left: 40px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: italic;
+}
+
+
+/* PAST BOOKS */
+.past-books-container, .stickers {
+  background-color: #FFFFFF;
+  margin: 20px 0px;
+  padding: 30px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.past-books-container h1, .stickers h1 {
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.past-books {
+  display: flex;
+  min-height: 100vh;
+  flex: 1;
+  flex-basis: content;
+  flex-flow: wrap;
+  background-color: #FFFFFF;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.past-books img {
+  max-height: 400px;
+  margin: 20px 0px;
+  box-shadow: 0px 1px 2px #232323;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.past-books img:hover{
+  box-shadow: 0px 0px 25px #232323;
+  cursor: pointer;
+}
+
+
+/* STICKERS */
