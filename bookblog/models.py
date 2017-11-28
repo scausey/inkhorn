@@ -1,6 +1,5 @@
 from django.db import models
 from django.utils import timezone
-import ..inkhorn.settings
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
@@ -8,7 +7,7 @@ class Post(models.Model):
     book_synopsis = models.TextField(null=True, blank=True)
     book_review = models.TextField()
     # maybe change upload_to to 'images/bookcovers'
-    book_cover = models.ImageField(null=True, blank=True, upload_to=STATIC_URL)
+    book_cover = models.ImageField(null=True, blank=True)
 
     def publish(self):
         self.date_published = timezone.now()
