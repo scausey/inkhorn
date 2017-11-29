@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bookblog',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -146,6 +147,17 @@ MEDIA_URL = '/media/'
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Amazon S3
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = 'inkhornbooks'
+
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
+STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
