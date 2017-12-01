@@ -6,8 +6,7 @@ class Post(models.Model):
     date_published = models.DateTimeField(blank=True, null=True)
     book_synopsis = models.TextField(null=True, blank=True)
     book_review = models.TextField()
-    # maybe change upload_to to 'images/bookcovers'
-    book_cover = models.ImageField(null=True, blank=True)
+    book_cover = models.URLField(null=True, blank=True)
 
     def publish(self):
         self.date_published = timezone.now()
