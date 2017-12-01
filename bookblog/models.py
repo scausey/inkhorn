@@ -14,11 +14,3 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-
-
-class Sticker(models.Model):
-    sticker_title = models.CharField(max_length=200)
-    sticker_image = models.ImageField(upload_to="images/stickers")
-
-    def __str__(self):
-        return self.sticker_title
