@@ -23,7 +23,7 @@
   margin-bottom: 25px;
 }
 
-.recent-review h4, .book-review-container h4 , .current-book-content h4{
+.recent-review h4, .book-review-container h4 {
   margin-bottom: 20px;
 }
 
@@ -44,33 +44,32 @@
 
 /* CURRENTLY READING */
 .currently-reading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #FFFFFF;
   margin: 10px 0px;
   font-family: 'Barlow Semi Condensed', sans-serif;
-  /*height: 500px;*/
-  padding: 30px 50px;
+  padding: 40px 50px;
   padding-right: 50px;
 }
 
-.currently-reading .book-cover {
+.current-book-content {
   display: flex;
-  max-height: 300px;
-  margin: 10px 10px;
-  margin-right: 40px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.currently-reading .book-cover {
+  max-width: 210px;
   box-shadow: 0px 0px 25px #232323;
 }
 
 .blurb {
   border-left: 4px solid #D75B46;
-  margin-left: 40px;
+  padding: 15px 20px;
   padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-right: 40px;
   font-style: italic;
 }
+
 
 
 /* PAST BOOKS */
