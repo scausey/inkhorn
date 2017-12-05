@@ -10,7 +10,18 @@
 }
 
 .recent-review {
-  height: 500px;
+  /*height: 500px;*/
+}
+
+.recent-review-content {
+  display: flex;
+  align-items: center;
+}
+
+.recent-review-text {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
 }
 
 .book-cover {
@@ -29,6 +40,8 @@
 
 .recent-review .btn {
   display: inline-block;
+  width: 80px;
+  text-align: center;
   margin-top: 20px;
   padding: 5px 70px;
   border: 1px solid black;
@@ -109,4 +122,4 @@
 }
 
 
-/* STICKERS */
+/* REVIEW DETAIL */

@@ -8,11 +8,15 @@
 
 {% block content %}
 <div class="recent-review">
-  <img class="book-cover" src="{{ recent_review.book_cover }}" />
-  <a href="{% url 'review_detail' pk=recent_review.pk %}"><h1>{{ recent_review.title }}</h1></a>
-  <h4>{{ recent_review.date_published }}</h4>
-  <p>{{recent_review.book_review|linebreaksbr|truncatewords:200}}</p>
-  <a href="{% url 'review_detail' pk=recent_review.pk %}" class="btn"><strong>Read More</strong></a>
+  <div class="recent-review-content">
+    <img class="book-cover" src="{{ recent_review.book_cover }}" />
+    <div class="recent-review-text">
+      <a href="{% url 'review_detail' pk=recent_review.pk %}"><h1>{{ recent_review.title }}</h1></a>
+      <h4>{{ recent_review.date_published }}</h4>
+      <p>{{recent_review.book_review|linebreaksbr|truncatewords:215}}</p>
+      <a href="{% url 'review_detail' pk=recent_review.pk %}" class="btn"><strong>Read More</strong></a>
+    </div>
+  </div>
 </div>
 
 <div class="currently-reading">
