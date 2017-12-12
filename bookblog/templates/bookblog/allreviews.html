@@ -1,0 +1,18 @@
+{% extends 'bookblog/base.html' %}
+{% load staticfiles %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="past-books-container">
+  <h1>All Book Reviews</h1>
+  <div class="past-books">
+    {% for book in books %}
+    <a href="{% url 'review_detail' pk=book.pk %}"><img src="{{ book.book_cover }}" /></a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

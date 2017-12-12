@@ -20,20 +20,20 @@
 </div>
 
 <div class="currently-reading">
-  <h1>Currently Reading: Rebel of the Sands (Rebel of the Sands #1), by Alwyn Hamilton</h1>
-  <h4>Started December 1, 2017</h4>
+  <h1>Currently Reading: Tower of Dawn (Throne of Glass #6), by Sarah J. Maas</h1>
+  <h4>Started December 13, 2017</h4>
   <div class="current-book-content">
     <div class="blurb">
-      <p>Mortals rule the desert nation of Miraji, but mythical beasts still roam the wild and remote areas, and rumor has it that somewhere, djinn still perform their magic.  For humans, it’s an unforgiving place, especially if you’re poor, orphaned, or female.</p>
+      <p>In the next installment of the New York Times bestselling Throne of Glass series, follow Chaol on his sweeping journey to a distant empire.</p>
       <br />
-      <p>Amani Al’Hiza is all three.  She’s a gifted gunslinger with perfect aim, but she can’t shoot her way out of Dustwalk, the back-country town where she’s destined to wind up wed or dead.</p>
+      <p>Chaol Westfall has always defined himself by his unwavering loyalty, his strength, and his position as the Captain of the Guard. But all of that has changed since the glass castle shattered, since his men were slaughtered, since the King of Adarlan spared him from a killing blow, but left his body broken.</p>
       <br />
-      <p>Then she meets Jin, a rakish foreigner, in a shooting contest, and sees him as the perfect escape route. But though she’s spent years dreaming of leaving Dustwalk, she never imagined she’d gallop away on mythical horse—or that it would take a foreign fugitive to show her the heart of the desert she thought she knew.</p>
+      <p>His only shot at recovery lies with the legendary healers of the Torre Cesme in Antica—the stronghold of the southern continent's mighty empire. And with war looming over Dorian and Aelin back home, their survival might lie with Chaol and Nesryn convincing its rulers to ally with them.</p>
       <br />
-      <p>Rebel of the Sands reveals what happens when a dream deferred explodes—in the fires of rebellion, of romantic passion, and the all-consuming inferno of a girl finally, at long last, embracing her power.</p>
+      <p>But what they discover in Antica will change them both—and be more vital to saving Erilea than they could have imagined.</p>
     </div>
     <div class="book-cover-container">
-      <img class="book-cover" src="https://images.gr-assets.com/books/1446655216l/26159610.jpg" />
+      <img class="book-cover" src="https://images.gr-assets.com/books/1497973101l/31450852.jpg" />
     </div>
   </div>
 </div>
@@ -44,6 +44,13 @@
     {% for book in past_books %}
     <a href="{% url 'review_detail' pk=book.pk %}"><img src="{{ book.book_cover }}" /></a>
     {% endfor %}
+    <a href="{% url 'all_reviews' %}">
+      <div class="more-books-btn">
+        <span>...</span>
+        <strong>MORE REVIEWS</strong>
+        <span>...</span>
+      </div>
+    </a>
   </div>
 </div>
 
@@ -65,10 +72,7 @@
     <p>Margaret Atwood signed my copy of <a href="https://www.goodreads.com/book/show/38447.The_Handmaid_s_Tale"><em>A Handmaid's Tale</em></a> (picture above) at <a href="http://www.thebookcon.com/">BookCon</a> 2017 and I just about died right then and there. I was obsessed with Sarah J. Maas for a moment, but the craze has died down. My favorite recent YA series is <a href="https://www.goodreads.com/series/62018-the-lunar-chronicles"><em>The Lunar Chronicles</em></a> by Marissa Meyer. My favorite old-school fantasy book is <em><a href="https://www.goodreads.com/book/show/518848.Sabriel?ac=1&from_search=true">Sabriel</a></em>, by Garth Nix (and also the other two books in the series because I love the Disputable Dog). As you can tell, sometimes my best friend and I dress up as literary characters (<a href="https://www.youtube.com/watch?v=JLwyn8uQhkw">"Can ya hear the empty spaces?!"</a>).</p>
     <p>When I'm not reading, I'm teaching others how to code, or trying to build things like this website. Python is love. For real. If you like code too, check out my <a href="https://github.com/scausey">github</a>! You can find me other places online too: </p>
     <div class="social-media-icons">
-      <!-- <a href="https://www.goodreads.com/user/show/3955921-samantha-louise" class="goodreads"><span class="icon-stack">
-        <i class="icon-sign-blank icon-stack-base"></i>
-        <i class="icon-light"><span style="font-family:helvetica;">g</span></i>
-      </span></a> -->
+      <!-- <a href="https://www.goodreads.com/user/show/3955921-samantha-louise" class="goodreads"><i class="fab fa-goodreads"></i></a> -->
       <a href="http://steamcommunity.com/id/enigmajane/"><i class="fa fa-steam-square fa-3x" aria-hidden="true"></i></a>
       <a href="https://twitter.com/causeys007"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
       <a href="https://www.pinterest.com/lovelittlelou3/"><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></a>

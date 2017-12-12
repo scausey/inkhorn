@@ -116,9 +116,21 @@
   transition: box-shadow 0.5s ease-in-out;
 }
 
-.past-books img:hover{
+.past-books img:hover {
   box-shadow: 0px 0px 25px #232323;
   cursor: pointer;
+}
+
+.past-books .more-books-btn {
+  margin: 20px 0px;
+  height: 400px;
+  width: 263px;
+  background-color: #FFFFFF;
+  color: #D75B46;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 
