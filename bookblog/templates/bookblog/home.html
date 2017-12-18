@@ -13,7 +13,7 @@
     <div class="recent-review-text">
       <a href="{% url 'review_detail' pk=recent_review.pk %}"><h1>{{ recent_review.title }}</h1></a>
       <h4>{{ recent_review.date_published }}</h4>
-      <p>{{recent_review.book_review|linebreaksbr|truncatewords:180}}</p>
+      <p>{{recent_review.book_review|linebreaksbr|truncatewords:150}}</p>
       <a href="{% url 'review_detail' pk=recent_review.pk %}" class="btn"><strong>Read More</strong></a>
     </div>
   </div>
