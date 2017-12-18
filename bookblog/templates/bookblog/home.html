@@ -13,7 +13,7 @@
     <div class="recent-review-text">
       <a href="{% url 'review_detail' pk=recent_review.pk %}"><h1>{{ recent_review.title }}</h1></a>
       <h4>{{ recent_review.date_published }}</h4>
-      <p>{{recent_review.book_review|linebreaksbr|truncatewords:215}}</p>
+      <p>{{recent_review.book_review|linebreaksbr|truncatewords:180}}</p>
       <a href="{% url 'review_detail' pk=recent_review.pk %}" class="btn"><strong>Read More</strong></a>
     </div>
   </div>
@@ -21,7 +21,7 @@
 
 <div class="currently-reading">
   <h1>Currently Reading: Tower of Dawn (Throne of Glass #6), by Sarah J. Maas</h1>
-  <h4>Started December 13, 2017</h4>
+  <h4>Started December 18, 2017</h4>
   <div class="current-book-content">
     <div class="blurb">
       <p>In the next installment of the New York Times bestselling Throne of Glass series, follow Chaol on his sweeping journey to a distant empire.</p>
