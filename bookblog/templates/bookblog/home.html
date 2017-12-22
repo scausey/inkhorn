@@ -40,6 +40,21 @@
 
 <div class="past-books-container">
   <h1>Past Book Reviews</h1>
+  <div class="mobile past-books">
+    {% for book in past_books %}
+    <a href="{% url 'review_detail' pk=book.pk %}"><p>
+      {{ book.title }}
+    </p></a>
+    <br />
+    {% endfor %}
+    <a href="{% url 'all_reviews' %}">
+      <div class="more-books-btn">
+        <span>...</span>
+        <strong>MORE REVIEWS</strong>
+        <span>...</span>
+      </div>
+    </a>
+  </div>
   <div class="past-books">
     {% for book in past_books %}
     <a href="{% url 'review_detail' pk=book.pk %}"><img src="{{ book.book_cover }}" /></a>

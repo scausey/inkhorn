@@ -65,6 +65,10 @@
 
 
 /* PAST BOOKS */
+.past-books.mobile {
+  display: none;
+}
+
 .past-books {
   display: flex;
   min-height: 100vh;
@@ -111,11 +115,13 @@
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 470px) {
+  /* RECENT REVIEW */
   .recent-review-content, .current-book-content {
     display: block;
   }
   .recent-review-text {
     display: block;
+    width: 100%;
   }
   .book-cover {
     width: 100%;
@@ -123,5 +129,33 @@
   }
   .recent-review .btn {
     width: 50%;
+  }
+
+  /* CURRENTLY READING */
+  .currently-reading {
+    padding-right: 1rem;
+  }
+  .current-book-content {
+    padding-top: 2rem;
+  }
+
+  /* PAST BOOKS */
+  .past-books {
+    display: none;
+  }
+  .past-books.mobile {
+    display: block;
+    margin-top: 1rem;
+  }
+  .past-books.mobile .more-books-btn {
+    height: 5rem;
+  }
+
+  /* ABOUT SECTION */
+  .about .about-content {
+    padding: 0 1.5rem;
+  }
+  .about .about-images .about-image-1, .about .about-images .about-image-3 {
+    display: none;
   }
 }
