@@ -107,3 +107,21 @@
   font-style: italic;
   margin-bottom: 30px;
 }
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 470px) {
+  .recent-review-content, .current-book-content {
+    display: block;
+  }
+  .recent-review-text {
+    display: block;
+  }
+  .book-cover {
+    width: 100%;
+    display: none;
+  }
+  .recent-review .btn {
+    width: 50%;
+  }
+}
