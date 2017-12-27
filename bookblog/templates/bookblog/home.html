@@ -9,6 +9,8 @@
 {% block content %}
 <div class="recent-review">
   <div class="recent-review-content">
+    <a class="mobile-text" href="{% url 'review_detail' pk=recent_review.pk %}"><h1>{{ recent_review.title }}</h1></a>
+    <h4 class="mobile-text">{{ recent_review.date_published }}</h4>
     <img class="book-cover" src="{{ recent_review.book_cover }}" />
     <div class="recent-review-text">
       <a href="{% url 'review_detail' pk=recent_review.pk %}"><h1>{{ recent_review.title }}</h1></a>

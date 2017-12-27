@@ -32,6 +32,10 @@
   margin-bottom: 20px;
 }
 
+a.mobile-text, h4.mobile-text {
+  display: none;
+}
+
 .recent-review .btn {
   display: inline-block;
   width: 80px;
@@ -124,9 +128,23 @@
     width: 100%;
   }
   .book-cover {
+    max-width: 100%;
     width: 100%;
+    /* display: none; */
+  }
+
+  .recent-review-content a, .recent-review-content h4 {
     display: none;
   }
+
+  a.mobile-text, h4.mobile-text {
+    display: block;
+  }
+
+  .currently-reading .book-cover {
+    display:  none;
+  }
+
   .recent-review .btn {
     width: 50%;
   }
