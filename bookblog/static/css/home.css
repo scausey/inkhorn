@@ -108,6 +108,15 @@ a.mobile-text, h4.mobile-text {
   text-align: center;
 }
 
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+td {
+  padding: 10px 10px;
+}
+
+
 
 /* REVIEW DETAIL */
 .detail-blurb {
@@ -161,13 +170,20 @@ a.mobile-text, h4.mobile-text {
   .past-books {
     display: none;
   }
+  .past-books-container {
+    padding-bottom: 0;
+  }
   .past-books.mobile {
     display: block;
     margin-top: 1rem;
   }
   .past-books.mobile .more-books-btn {
     height: 5rem;
+    width: 11.5rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
   }
+
 
   /* ABOUT SECTION */
   .about .about-content {
