@@ -69,7 +69,7 @@ a.mobile-text, h4.mobile-text {
 
 
 /* PAST BOOKS */
-.past-books.mobile {
+#mobile-past-books {
   display: none;
 }
 
@@ -96,7 +96,7 @@ a.mobile-text, h4.mobile-text {
   cursor: pointer;
 }
 
-.past-books .more-books-btn {
+.past-books .more-books-btn, #mobile-past-books .more-books-btn {
   margin: 20px 0px;
   height: 400px;
   width: 263px;
@@ -171,17 +171,18 @@ td {
     display: none;
   }
   .past-books-container {
-    padding-bottom: 0;
+    padding-bottom: 1.5rem;
   }
-  .past-books.mobile {
+  #mobile-past-books {
     display: block;
     margin-top: 1rem;
   }
-  .past-books.mobile .more-books-btn {
+  #mobile-past-books .more-books-btn {
     height: 5rem;
     width: 11.5rem;
     font-size: 1.5rem;
     margin: 0 auto;
+    padding-bottom: 0;
   }
 
 
