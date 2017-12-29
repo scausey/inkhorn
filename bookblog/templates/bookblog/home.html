@@ -43,12 +43,17 @@
 <div class="past-books-container">
   <h1>Past Book Reviews</h1>
   <div class="mobile past-books">
-    {% for book in past_books %}
-    <a href="{% url 'review_detail' pk=book.pk %}"><p>
-      {{ book.title }}
-    </p></a>
-    <br />
-    {% endfor %}
+    <table>
+      {% for book in past_books %}
+      <tr>
+        <td>
+          <a href="{% url 'review_detail' pk=book.pk %}"><p>
+            {{ book.title }}
+          </p></a>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
     <a href="{% url 'all_reviews' %}">
       <div class="more-books-btn">
         <span>...</span>
